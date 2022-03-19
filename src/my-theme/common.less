@@ -1,0 +1,9 @@
+@import 'index.less';
+@black: black;
+.background(@name, @value) {
+  .@{name}-background{
+    color: @value;
+  }
+}
+.background(body, @black);
+//.background(body, @body-background);

@@ -1,0 +1,18 @@
+/*------------------------------------------------------------ 修正各浏览器兼容性问题 -----------------------------------------------------------*/
+@-moz-document url-prefix() {
+  .ivu-select-item,
+  .ivu-dropdown-item,
+  .ivu-cascader .ivu-cascader-menu-item,
+  .ivu-cascader-transfer .ivu-cascader-menu-item,
+  .ivu-transfer-list-content-item,
+  .ivu-table-filter-list .ivu-table-filter-select-item,
+  .ivu-menu-horizontal .ivu-menu-submenu .ivu-select-dropdown .ivu-menu-item,
+  .ivu-cell {
+    white-space: nowrap !important;
+  }
+  .ivu-cascader .ivu-cascader-menu-item,
+  .ivu-cascader-transfer .ivu-cascader-menu-item{
+    max-width: 300px;
+    white-space: initial!important;
+  }
+}

@@ -1,0 +1,192 @@
+.inneritem {
+  border: 1px solid #e9e9e9;
+}
+.inneritem h3{
+  margin:30px;
+}
+.innercontent{
+  margin: 10px 0;
+}
+.inneritem .inneritem-head {
+  padding-left: 15px;
+  font-size: 14px;
+  color: #464C5B;
+}
+.inneritem .formr {
+  margin: 0 30px;
+}
+.inneritem .formr .ivu-form-item {
+  padding-left: 0;
+  padding-right: 0;
+}
+.inneritem .fixtree {
+  overflow-y: auto;
+}
+.inneritem .fixbtn {
+  margin: 0 30px;
+}
+
+/*   tree    */
+.ztree-container {
+  overflow-y:auto;
+  min-height: 750px;
+  max-height: 960px;
+  border-right: 1px solid #e9e9e9;
+}
+.ztree * {
+  font-family: 'Microsoft YaHei', Helvetica, PingFang SC, sans-serif;
+  font-size: 14px;
+  color: inherit;
+}
+.ztree li span.button.chk {
+  margin: 0 10px;
+}
+.ztree li span.button {
+  background: none;
+}
+.ztree li span.button {
+  width: 0;
+}
+.ztree li span.button.center_docu ,
+.ztree li span.button.bottom_docu ,
+.ztree li ul.line {
+  cursor: default;
+  background: none;
+}
+.ztree li span.button.ico_open {
+  background: none;
+}
+.ztree li span.button.ico_docu {
+  background: none;
+}
+.ztree li span.button.chk {
+  width: 18px;
+  height: 18px;
+  margin: 0 4px 0 0;
+}
+.ztree li .diy-btn-add,
+.ztree li .diy-btn-del,
+.ztree li .diyBtnEdit,
+.ztree li .diy-btn-edit {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 16px;
+  margin-top: 2px;
+  text-indent: -9999px;
+  width: 16px;
+  height:  16px;
+}
+.ztree li .diy-btn-add {
+  background: url(../images/ztree-img/plus.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.ztree li .diy-btn-del {
+  background: url(../images/ztree-img/delete.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.ztree li .diyBtnEdit, .ztree li .diy-btn-edit {
+  background: url(../images/ztree-img/edit.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+/*  展开  */
+.ztree li span.button.root_open ,
+.ztree li span.button.bottom_open ,
+.ztree li span.button.center_open,
+.ztree li span.button.roots_open {
+  background: url(../images/ztree-img/-.png) center center no-repeat;
+}
+/*  关闭  */
+.ztree li span.button.bottom_close ,
+.ztree li span.button.root_close ,
+.ztree li span.button.center_close ,
+.ztree li span.button.roots_close {
+  background: url(../images/ztree-img/+.png) center center no-repeat;
+}
+/*  checkbox  */
+.ztree li span.button.chk.checkbox_false_full ,
+.ztree li span.button.chk.checkbox_false_full_focus {
+  background: url(../images/ic_checkbox.png) center center no-repeat;
+  cursor: pointer;
+}
+/*  半选   */
+.ztree li span.button.chk.checkbox_true_part ,
+.ztree li span.button.chk.checkbox_true_part_focus ,
+.ztree li span.button.chk.checkbox_false_part ,
+.ztree li span.button.chk.checkbox_false_part_focus {
+  background: url(../images/ic_checkbox_halfselect.png) center center no-repeat;
+  cursor: pointer;
+}
+/*   全选   */
+.ztree li span.button.chk.checkbox_true_full ,
+.ztree li span.button.chk.checkbox_true_full_focus {
+  background: url(../images/ic_checkbox_selected.png) center center no-repeat;
+  cursor: pointer;
+}
+/*  禁选  */
+.ztree li span.button.chk.checkbox_false_disable,
+.ztree li span.button.chk.checkbox_true_disable{
+  background: url(../images/ic_checkbox_selected.png) center center no-repeat;
+  opacity: .3;
+  cursor: not-allowed;
+}
+
+/* 树节点最后一级显示截断处理 */
+.ztree li span.button.bottom_docu {
+  background: url(../images/ztree-img/+.png) center center no-repeat;
+  opacity: 0;
+}
+
+/* tree 样式规范 */
+.ztree li span.button.switch {
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+}
+.ztree li {
+  line-height: 20px;
+  margin: 16px 0;
+}
+.ztree li:last-child {
+  margin-bottom: 0;
+}
+.down-menu-tree .ztree > li:first-child{
+  margin-top: 0;
+}
+.ztree li span {
+  display: inline-block;
+  line-height: 20px;
+  margin-right: 0;
+  margin-top: 1px;
+}
+.ztree li a {
+  height: 20px;
+  padding-right: 0;
+  text-decoration: none;
+}
+.ztree li a:hover {
+  text-decoration: none;
+  padding-right: 16px;
+}
+.ztree li span.button.ico_docu {
+  margin-right: 0;
+}
+.ztree li a.curSelectedNode {
+  height: 20px;
+  background-color: transparent;
+  color: #1890FF;
+  font-weight: bold;
+  padding-right: 16px;
+}
+.ztree li span.button.ico_open {
+  margin-right: 0;
+}
+.ztree li span.button.ico_close {
+  margin-right: 0;
+}
+.ztree li ul {
+  padding: 0 0 0 16px;
+}
+.ztree {
+  padding: 0;
+}
