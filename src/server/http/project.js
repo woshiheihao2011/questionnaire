@@ -7,7 +7,7 @@ class Project extends ServiceHttp {
       resolve(_.cloneDeep(demoData.project))
     })
   }
-  /*增加和编辑客户*/
+  /*增加和编辑模板*/
   save (data) {
     return new Promise((resolve, reject) => {
       try {
@@ -15,15 +15,32 @@ class Project extends ServiceHttp {
           // 新增
           let last = demoData.project[demoData.project.length - 1]
           data.id = last.id + 1
-          demoData.project.push(data)
-          resolve()
+
+          // axios请求，远程调用API
+          this.axios.post(this.map.templateAdd, {'name': data.name, 'templateurl': data.templateurl})
+            .then(response => {
+              demoData.project.push(data)
+              resolve(response.data)
+            })
+            .catch(error => {
+              reject(error.error)
+            })
         } else {
           // 修改
           let index = demoData.project.findIndex(item => {
             return item.id === data.id
           })
           demoData.project[index] = data
-          resolve()
+
+          // axios请求，远程调用API
+          this.axios.post(this.map.templateUpdate, {'id':data.id,'name': data.name, 'templateurl': data.templateurl})
+            .then(response => {
+              demoData.project.push(data)
+              resolve(response.data)
+            })
+            .catch(error => {
+              reject(error.error)
+            })
         }
       } catch (error) {
         reject(error)

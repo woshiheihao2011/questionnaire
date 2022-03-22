@@ -27,7 +27,7 @@ export default {
     {
       id: 4,
       name: '5',
-      title: '项目管理',
+      title: '模板管理',
       route_link: '/project'
     },
     {

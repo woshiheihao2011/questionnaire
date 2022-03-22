@@ -78,7 +78,7 @@ class Questionnaire extends ServiceHttp {
   }
 
   /**
-   * 获取客户和项目的级联结构*/
+   * 获取客户和模板的级联结构*/
   getProjectList () {
     return new Promise((resolve, reject) => {
       let list = _.cloneDeep(demoData.customer)

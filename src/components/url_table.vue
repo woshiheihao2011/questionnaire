@@ -38,7 +38,6 @@
         pageSize: 10,
         total: 0,
         loading: false
-//        height: 521,
       }
     },
     methods: {
@@ -74,18 +73,18 @@
 //          }
 //        }
         // todo 正式api后，需放开下列代码
-        /* let params = {
+        let params = {
           page: page,
           iDisplayLength: this.pageSize
-        } */
-        /* this.axios.get(this.url, {params: Object.assign(params, this.params)})
+        }
+         this.axios.get(this.url, {params: Object.assign(params, this.params)})
           .then(data => {
             this.total = data.total
             this.data = data.data
           })
           .catch(error => {
             console.warn('error:', this.url, error)
-          }) */
+          })
       },
       handlePageChange (page) {
         this.curPage = page
